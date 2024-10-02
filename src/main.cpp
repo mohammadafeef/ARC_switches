@@ -14,9 +14,10 @@ int realys[] = {D5,D6,D7,D8};
 char a = '\0',b='\0';
 int pin_select = -1;
 
-#define WIFI_SSID "ARC-WIFI"
-#define WIFI_PASSWORD "arc@&$456!"
-#define DATABASE_URL "arc-lock-6e5c6-default-rtdb.asia-southeast1.firebasedatabase.app"
+//hidden code id : 1
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
+#define DATABASE_URL ""
 
 FirebaseData fbdo;
 FirebaseAuth auth;
@@ -68,7 +69,8 @@ void setup()
 
   config.signer.test_mode = true;
   config.database_url = DATABASE_URL;
-  config.signer.tokens.legacy_token = "EJf6A6wWjYycd06bLoLzD4ziGJjiwcdpHwzOxFYq";
+    //hiden code id : 2
+  config.signer.tokens.legacy_token = "";
 
   Firebase.begin(&config, &auth);
   Firebase.reconnectWiFi(true);
